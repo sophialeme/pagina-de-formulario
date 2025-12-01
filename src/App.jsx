@@ -22,9 +22,7 @@ function App() {
   const [password, setPassword] = useState("");
 
 
-  // ---------------------------------------------------
-  // POST - CRIAR USUÁRIO
-  // ---------------------------------------------------
+
   async function criarUsuario(data) {
     try {
       const response = await fetch("https://api.alanleiser.com/api/users", {
@@ -52,9 +50,6 @@ function App() {
   }
 
 
-  // ---------------------------------------------------
-  // GET - LOGIN
-  // ---------------------------------------------------
   async function buscarUsuario(email, password) {
     try {
 
@@ -87,9 +82,7 @@ function App() {
   }
 
 
-  // ---------------------------------------------------
-  // SUBMIT FINAL
-  // ---------------------------------------------------
+
   const onSubmitHandle = async (e) => {
     e.preventDefault();
 
